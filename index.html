@@ -1,689 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mohit Ranganath | Data Analyst specializing in Operations, Supply Chain Analytics, and AI Business Intelligence dashboards.">
-  <title>Mohit Ranganath | Data Analyst | Operations & Supply Chain Analytics</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mohit Ranganath Kalicharan | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header id="header">
-    <div class="container nav-container">
-      <a href="#hero" class="logo">
-        <i data-lucide="line-chart"></i>
-        <span>MOHIT RANGANATH</span>
-      </a>
-      
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
-        <i data-lucide="menu"></i>
-      </button>
+  <!-- NAVBAR -->
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#expertise" class="nav-link">Expertise</a></li>
-        <li><a href="#dashboard" class="nav-link">KPI Simulator</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#timeline" class="nav-link">Experience</a></li>
-        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
-      </ul>
-    </div>
+  <header class="navbar">
+    <div class="logo">Mohit Ranganath Kalicharan</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="container hero-wrapper">
-      <div class="hero-content">
-        <div class="hero-tag">
-          <span></span> CAPM® Certified • M.Eng in Engineering Management
-        </div>
-        <h1 class="hero-title">
-          Transforming Operations Through <span>Data Analytics</span>
-        </h1>
-        <p class="hero-desc">
-          Data Analyst specializing in translating complex operational and supply chain datasets into interactive dashboards and automated business intelligence systems. Focused on driving efficiency, reducing process bottlenecks, and optimizing resource utilization.
-        </p>
-        <div class="hero-actions">
-          <a href="#dashboard" class="btn btn-primary">
-            <i data-lucide="presentation"></i> Try KPI Simulator
-          </a>
-          <a href="#projects" class="btn btn-secondary">
-            <i data-lucide="database"></i> View My Projects
-          </a>
-        </div>
-        
-        <div class="hero-kpis">
-          <div class="hero-kpi-item">
-            <h4>4.0</h4>
-            <p>Graduate GPA (Stevens)</p>
-          </div>
-          <div class="hero-kpi-item">
-            <h4>120K+</h4>
-            <p>Data Records Modeled</p>
-          </div>
-          <div class="hero-kpi-item">
-            <h4>-20%</h4>
-            <p>Process Delays Achieved</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="hero-visualizer">
-        <div class="visualizer-header">
-          <div class="visualizer-title">
-            <i data-lucide="network" style="color: var(--color-primary);"></i>
-            <span>Interactive Supply Chain Flows</span>
-          </div>
-          <div class="visualizer-status">
-            <span></span> Live Network Flow
-          </div>
-        </div>
-        <div class="visualizer-canvas-container">
-          <canvas id="flowCanvas"></canvas>
-        </div>
-        <div class="visualizer-legend">
-          <div class="legend-item">
-            <span class="legend-dot legend-supplier"></span>
-            <span>Supplier</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-dot legend-factory"></span>
-            <span>Factory</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-dot legend-warehouse"></span>
-            <span>Warehouse</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-dot legend-retailer"></span>
-            <span>Customer</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- ABOUT -->
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container about-wrapper">
-      <div class="about-graphics">
-        <div class="about-card highlight">
-          <i data-lucide="award"></i>
-          <h3>CAPM® Certified</h3>
-          <p>Project management credentials from the Project Management Institute (PMI).</p>
-        </div>
-        <div class="about-card" style="margin-top: 2rem;">
-          <i data-lucide="graduation-cap"></i>
-          <h3>Academic Excellence</h3>
-          <p>Master of Engineering in Engineering Management with a 4.0 GPA from Stevens Institute.</p>
-        </div>
-        <div class="about-card">
-          <i data-lucide="cpu"></i>
-          <h3>AI Integration</h3>
-          <p>Experienced in integrating Natural Language Querying (RAG) with retail datasets.</p>
-        </div>
-        <div class="about-card" style="margin-top: 2rem;">
-          <i data-lucide="bar-chart-4"></i>
-          <h3>Operations Focus</h3>
-          <p>Strong foundations in reverse logistics, process improvement, and data modeling.</p>
-        </div>
-      </div>
-      
-      <div class="about-text">
-        <h2>About Me</h2>
-        <h3>Unlocking insights from structured datasets.</h3>
-        <p>
-          I am a Data Analyst with a background in Engineering Management and Civil Engineering. My expertise lies in bridging physical operations with analytical data pipelines. I design interactive dashboards, write optimized SQL queries, and construct predictive scripts to identify trends, mitigate stockout risks, and optimize processes.
-        </p>
-        <p>
-          My work combines technical data analysis with operational excellence principles:
-        </p>
-        <ul class="about-bullets">
-          <li><strong>Quantitative BI:</strong> Constructing clean data models and dynamic DAX metrics to track student participation, construction delays, and return logistics.</li>
-          <li><strong>Process Optimization:</strong> Applying project management methodologies to eliminate tracking errors, speed up inspection workflows, and reduce project rework.</li>
-          <li><strong>AI and Automation:</strong> Implementing AI-powered retrievals and language processing to make business intelligence queries natural and accessible.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <section id="about" class="hero">
+    <div class="container center">
 
-  <!-- Core Expertise Section -->
-  <section id="expertise">
-    <div class="container">
-      <h2 class="section-title">Core Competencies</h2>
-      <div class="expertise-grid">
-        <!-- Card 1 -->
-        <div class="glass-card expertise-card">
-          <div class="expertise-icon">
-            <i data-lucide="database"></i>
-          </div>
-          <h3>BI & Data Modeling</h3>
-          <p>Designing relational schemas, optimizing ETL processes, building interactive Power BI dashboards, and writing complex DAX measures to track KPIs and resource utilization.</p>
-          <div class="expertise-skills">
-            <span class="skill-tag">Power BI</span>
-            <span class="skill-tag">DAX Measures</span>
-            <span class="skill-tag">Data Modeling</span>
-            <span class="skill-tag">KPI Dashboards</span>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="glass-card expertise-card">
-          <div class="expertise-icon">
-            <i data-lucide="code-2"></i>
-          </div>
-          <h3>Programming & Queries</h3>
-          <p>Extracting, cleaning, and transforming unstructured or relational datasets using Python (Pandas) and executing optimized queries in SQL/PostgreSQL databases.</p>
-          <div class="expertise-skills">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">Excel</span>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="glass-card expertise-card">
-          <div class="expertise-icon">
-            <i data-lucide="truck"></i>
-          </div>
-          <h3>Operations & Supply Chain</h3>
-          <p>Analyzing reverse logistics pipelines, return trends, cost drivers, and sustainability metrics. Translating operational pain points into digital optimization metrics.</p>
-          <div class="expertise-skills">
-            <span class="skill-tag">Reverse Logistics</span>
-            <span class="skill-tag">Process Optimization</span>
-            <span class="skill-tag">Anomaly Detection</span>
-            <span class="skill-tag">KPI Tracking</span>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="glass-card expertise-card">
-          <div class="expertise-icon">
-            <i data-lucide="sparkles"></i>
-          </div>
-          <h3>AI & Sentiment Analysis</h3>
-          <p>Developing Retrieval-Augmented Generation (RAG) query search layers over datasets, using statistical NLP libraries (NLTK, TextBlob) to quantify customer sentiments.</p>
-          <div class="expertise-skills">
-            <span class="skill-tag">RAG Pipelines</span>
-            <span class="skill-tag">NLP (NLTK)</span>
-            <span class="skill-tag">TextBlob</span>
-            <span class="skill-tag">AI BI Copilots</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive KPI Simulator Section -->
-  <section id="dashboard">
-    <div class="container">
-      <h2>Interactive KPI Simulator Dashboard</h2>
-      <p class="dashboard-desc">
-        A demonstration of dynamic operations research and interactive business intelligence dashboarding. Drag the sliders in real-time to simulate how lead times, demand volatility, and safety buffers dynamically impact service rates (OTIF), carrying costs, and stockout probabilities.
+      <p class="small-title">
+        Junior Analyst | Operations and Process Analytics
       </p>
-      
-      <div class="dashboard-wrapper">
-        <!-- Controls Column -->
-        <div class="glass-card dashboard-controls">
-          <h3>Simulation Control Panel</h3>
-          
-          <div class="control-group">
-            <div class="control-label-wrapper">
-              <span class="control-label">
-                <i data-lucide="hourglass"></i> Supplier Lead Time
-              </span>
-              <span class="control-value" id="val-leadTime">14 Days</span>
-            </div>
-            <input type="range" id="input-leadTime" min="2" max="30" value="14">
-          </div>
 
-          <div class="control-group">
-            <div class="control-label-wrapper">
-              <span class="control-label">
-                <i data-lucide="activity"></i> Demand Volatility
-              </span>
-              <span class="control-value" id="val-volatility">20%</span>
-            </div>
-            <input type="range" id="input-volatility" min="5" max="60" value="20">
-          </div>
+      <h1>
+        Hi, I’m Mohit.
+      </h1>
 
-          <div class="control-group">
-            <div class="control-label-wrapper">
-              <span class="control-label">
-                <i data-lucide="package-open"></i> Safety Stock Buffer
-              </span>
-              <span class="control-value" id="val-safetyStock">2.0 Wks</span>
-            </div>
-            <input type="range" id="input-safetyStock" min="0" max="5" step="0.5" value="2.0">
-          </div>
+      <p class="hero-text">
+        I am an Engineering Management graduate with experience in operations reporting,
+        process improvement, Excel and Power BI dashboards, SQL and Python analysis,
+        and stakeholder coordination.
+      </p>
 
-          <div style="margin-top: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
-            <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--color-primary);">Scenario Presets</h4>
-            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-              <button class="btn btn-secondary" id="preset-stable" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Stable Flow</button>
-              <button class="btn btn-secondary" id="preset-disruption" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Red Sea Crisis</button>
-              <button class="btn btn-secondary" id="preset-lean" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">Just-In-Time</button>
-            </div>
-          </div>
-        </div>
+      <p class="hero-text">
+        I focus on transforming business and operations data into clear insights,
+        dashboards, and decision-support workflows that improve visibility,
+        reduce bottlenecks, and support better decision-making.
+      </p>
 
-        <!-- Dashboard Outputs Screen -->
-        <div class="dashboard-screen">
-          <div class="screen-header">
-            <div class="screen-title">
-              <h3>Simulated Performance Cockpit</h3>
-              <p>Dynamic forecasting calculation based on stochastic models</p>
-            </div>
-            <div>
-              <span class="visualizer-status">
-                <span></span> Active Calculations
-              </span>
-            </div>
-          </div>
-
-          <!-- Mini KPIs Grid -->
-          <div class="kpis-grid">
-            <div class="kpi-card otif">
-              <div class="kpi-card-header">
-                <span>OTIF Service Level</span>
-                <i data-lucide="check-circle-2"></i>
-              </div>
-              <div class="kpi-value" id="kpi-val-otif">95.4%</div>
-              <div class="kpi-trend positive" id="kpi-trend-otif">
-                <i data-lucide="trending-up"></i> Target Met (&gt;95%)
-              </div>
-            </div>
-
-            <div class="kpi-card cost">
-              <div class="kpi-card-header">
-                <span>Holding Costs (Annual)</span>
-                <i data-lucide="dollar-sign"></i>
-              </div>
-              <div class="kpi-value" id="kpi-val-cost">$142,500</div>
-              <div class="kpi-trend neutral" id="kpi-trend-cost">
-                <i data-lucide="minus"></i> Balanced Capital
-              </div>
-            </div>
-
-            <div class="kpi-card risk">
-              <div class="kpi-card-header">
-                <span>Stockout Risk</span>
-                <i data-lucide="alert-triangle"></i>
-              </div>
-              <div class="kpi-value" id="kpi-val-risk">4.2%</div>
-              <div class="kpi-trend positive" id="kpi-trend-risk">
-                <i data-lucide="shield"></i> Safe Operations
-              </div>
-            </div>
-          </div>
-
-          <!-- Chart Area -->
-          <div class="chart-container">
-            <canvas id="kpiChart"></canvas>
-          </div>
-        </div>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">Projects</a>
+        <a href="#contact" class="btn outline">Let’s Connect</a>
       </div>
+
     </div>
   </section>
 
-  <!-- Projects / Showcase Section -->
-  <section id="projects">
+  <!-- EDUCATION -->
+
+  <section id="education" class="section">
     <div class="container">
-      <h2>Projects & Case Studies</h2>
-      <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="ai">AI & BI</button>
-        <button class="filter-btn" data-filter="scm">Supply Chain & Operations</button>
-        <button class="filter-btn" data-filter="analytics">Data Analytics</button>
-      </div>
 
-      <div class="projects-grid">
-        <!-- Project 1: AI BI Copilot -->
-        <div class="glass-card project-card" data-category="ai">
-          <div class="project-image">
-            <div class="project-img-placeholder">
-              <i data-lucide="brain-circuit"></i>
-              <div class="project-grid-overlay"></div>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Python & SQL</span>
-              <span class="project-tag">AI/RAG</span>
-            </div>
-          </div>
-          <h3>AI Business Intelligence Copilot</h3>
-          <p>
-            Developed an end-to-end AI-driven decision system integrating analytical data pipelines (KPI tracking, category breakdown, time series trends) with a Retrieval-Augmented Generation (RAG) query search engine. Enables stakeholders to run natural language questions over complex retail databases.
-          </p>
-          <div class="project-metrics">
-            <div class="metric-item">
-              <span class="metric-label">Access Method</span>
-              <span class="metric-val">Natural Lang.</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">Visual Analytics</span>
-              <span class="metric-val">Interactive</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">Architecture</span>
-              <span class="metric-val">RAG Pipeline</span>
-            </div>
-          </div>
-          <a href="https://github.com" target="_blank" class="project-link">View GitHub Repository <i data-lucide="external-link"></i></a>
-        </div>
+      <h2>Education</h2>
+      <div class="underline"></div>
 
-        <!-- Project 2: Reverse Logistics -->
-        <div class="glass-card project-card" data-category="scm">
-          <div class="project-image">
-            <div class="project-img-placeholder">
-              <i data-lucide="refresh-cw"></i>
-              <div class="project-grid-overlay"></div>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Python & SQL</span>
-              <span class="project-tag">Power BI</span>
-            </div>
-          </div>
-          <h3>Reverse Logistics & Return Analytics</h3>
-          <p>
-            Analyzed structured e-commerce returns data to isolate core cost drivers and transit risks. Built a comprehensive dashboard featuring key supply chain metrics, financial impact estimates, and reverse logistics indicators to improve inventory decisions.
-          </p>
-          <div class="project-metrics">
-            <div class="metric-item">
-              <span class="metric-label">KPI Tracking</span>
-              <span class="metric-val">Active</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">Cost Drivers</span>
-              <span class="metric-val">Isolated</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">Sustainability</span>
-              <span class="metric-val">Indexed</span>
-            </div>
-          </div>
-          <a href="https://github.com" target="_blank" class="project-link">View Project Details <i data-lucide="arrow-right"></i></a>
-        </div>
+      <div class="timeline">
 
-        <!-- Project 3: EV Sentiment -->
-        <div class="glass-card project-card" data-category="analytics">
-          <div class="project-image">
-            <div class="project-img-placeholder">
-              <i data-lucide="battery-charging"></i>
-              <div class="project-grid-overlay"></div>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Pandas</span>
-              <span class="project-tag">NLTK / TextBlob</span>
-            </div>
-          </div>
-          <h3>EV Market & Sentiment Analytics</h3>
-          <p>
-            Engineered sentiment extraction workflows on over 120,000 electric vehicle records using Python NLP libraries. Mapped regional adoption trends and customer reviews to provide planning recommendations for local charging grid expansions.
-          </p>
-          <div class="project-metrics">
-            <div class="metric-item">
-              <span class="metric-label">Records Analyzed</span>
-              <span class="metric-val">120K+</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">NLP Sentiment</span>
-              <span class="metric-val">TextBlob</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">Infrastructure</span>
-              <span class="metric-val">Mapped</span>
-            </div>
-          </div>
-          <a href="https://github.com" target="_blank" class="project-link">View GitHub Repository <i data-lucide="external-link"></i></a>
-        </div>
-
-        <!-- Project 4: Decision Support System -->
-        <div class="glass-card project-card" data-category="analytics">
-          <div class="project-image">
-            <div class="project-img-placeholder">
-              <i data-lucide="check-square"></i>
-              <div class="project-grid-overlay"></div>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">Python DSS</span>
-              <span class="project-tag">Power BI</span>
-            </div>
-          </div>
-          <h3>Decision Support System for Masters Recommendations</h3>
-          <p>
-            Created a custom multi-criteria scoring algorithm to rank US universities. Fed the output data models directly into an interactive Power BI dashboard, matching student preferences (tuition, living costs, GRE thresholds, and rankings) with optimal recommendations.
-          </p>
-          <div class="project-metrics">
-            <div class="metric-item">
-              <span class="metric-label">Scoring Logic</span>
-              <span class="metric-val">Weighted</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">Data Slicers</span>
-              <span class="metric-val">Power BI</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-label">User Custom</span>
-              <span class="metric-val">Supported</span>
-            </div>
-          </div>
-          <a href="https://github.com" target="_blank" class="project-link">View Dashboard Details <i data-lucide="arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Timeline Section -->
-  <section id="timeline">
-    <div class="container">
-      <h2>Professional Experience</h2>
-      <div class="timeline-wrapper">
-        <!-- Item 1 -->
         <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-header">
-            <div class="timeline-title">
-              <h3>Data Analyst</h3>
-              <p>Bright Mind Enrichment and Schooling — Rochester, NY</p>
-            </div>
-            <span class="timeline-date">Jul. 2025 – Dec. 2025</span>
+          <div class="dot">
+            <i class="fa-solid fa-graduation-cap"></i>
           </div>
-          <div class="timeline-body">
-            <p>Analyzed student performance, attendance, and program participation data to support reporting requirements and strategic decisions.</p>
-            <ul class="timeline-achievements">
-              <li>Built interactive Power BI dashboards utilizing DAX metrics to track resource utilization and student participation.</li>
-              <li>Consolidated disparate datasets using Excel and PostgreSQL to compile unified operational reviews for managers.</li>
-            </ul>
+
+          <div class="timeline-card">
+            <span>May 2025</span>
+            <h3>Master of Engineering in Engineering Management</h3>
+            <h4>Stevens Institute of Technology, Hoboken, NJ</h4>
+            <p>GPA: 4.0</p>
           </div>
         </div>
 
-        <!-- Item 2 -->
         <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-header">
-            <div class="timeline-title">
-              <h3>Graduate Student Assistant — ELC Lab Monitor</h3>
-              <p>Stevens Institute of Technology — Hoboken, NJ</p>
-            </div>
-            <span class="timeline-date">Sept. 2024 – May 2025</span>
+          <div class="dot">
+            <i class="fa-solid fa-building-columns"></i>
           </div>
-          <div class="timeline-body">
-            <p>Managed student attendance dashboards and provided workflow and coordination support for cohort workshops.</p>
-            <ul class="timeline-achievements">
-              <li>Improved student engagement metrics by 30% and decreased data input errors by 40% using Excel dashboards and visual Kanban structures.</li>
-              <li>Boosted session attendance by 15% through streamlined, data-tracked registration schedules.</li>
-            </ul>
+
+          <div class="timeline-card">
+            <span>July 2022</span>
+            <h3>Bachelor of Engineering in Civil Engineering</h3>
+            <h4>Bangalore Institute of Technology, VTU, Karnataka, India</h4>
+            <p>GPA: 7.1 / 10</p>
           </div>
         </div>
 
-        <!-- Item 3 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-header">
-            <div class="timeline-title">
-              <h3>Graduate Trainee Engineer — Operations & Process Optimization</h3>
-              <p>Colliers India — Karnataka, India</p>
-            </div>
-            <span class="timeline-date">Jan. 2023 – Jul. 2023</span>
-          </div>
-          <div class="timeline-body">
-            <p>Applied digital technologies and data validation processes to drive engineering inspection efficiency and optimize project schedules.</p>
-            <ul class="timeline-achievements">
-              <li>Reduced project schedule delays by 20% by leading the rollout of CoGence, an AI-enabled management system.</li>
-              <li>Improved issue reporting transparency by 35% through consolidated anomaly-detection dashboards.</li>
-              <li>Integrated 3D walkthrough rendering workflows and point-cloud metrics to speed up QA approvals by 25%.</li>
-            </ul>
-          </div>
-        </div>
       </div>
+
     </div>
   </section>
 
-  <!-- Education & Certifications (Combined / Grid in Timeline/Contact gap) -->
-  <section id="education" style="background: rgba(255,255,255,0.01); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 5rem 0;">
-    <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
-      <div>
-        <h2 style="margin-bottom: 1.5rem;">Education</h2>
-        <div style="margin-bottom: 2rem;">
-          <h4 style="color: var(--color-primary); font-size: 1.1rem; margin-bottom: 0.25rem;">Master of Engineering in Engineering Management</h4>
-          <p style="color: var(--text-main); font-weight: 600; margin-bottom: 0.25rem;">Stevens Institute of Technology — Hoboken, NJ</p>
-          <p style="font-size: 0.85rem; color: var(--color-accent);">Graduated May 2025 • GPA: 4.0 / 4.0</p>
+ <!-- EXPERIENCE -->
+
+<section id="experience" class="section">
+  <div class="container">
+
+    <h2>Professional Experience</h2>
+    <div class="underline"></div>
+
+    <div class="experience-timeline">
+
+      <!-- Bright Mind -->
+
+      <div class="experience-item">
+
+        <div class="company-logo">
+          <img src="assets/logos/brightmind.png" alt="Bright Mind logo">
         </div>
-        <div>
-          <h4 style="color: var(--color-primary); font-size: 1.1rem; margin-bottom: 0.25rem;">Bachelor of Engineering in Civil Engineering</h4>
-          <p style="color: var(--text-main); font-weight: 600; margin-bottom: 0.25rem;">Bangalore Institute of Technology, VTU — India</p>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">Graduated July 2022 • GPA: 7.1 / 10</p>
+
+        <div class="experience-card">
+          <span>Jul. 2025 – Dec. 2025</span>
+
+          <h3>Data Analyst</h3>
+
+          <h4>Bright Mind Enrichment and Schooling, Rochester, NY</h4>
+
+          <ul>
+            <li>
+              Analyzed enrollment, attendance, and student performance data using Excel,
+              PostgreSQL, and Power BI to identify participation trends, monitor student progress,
+              and support program-level reporting.
+            </li>
+
+            <li>
+              Built interactive Power BI dashboards with DAX measures to track student participation,
+              engagement trends, program outcomes, and resource utilization, improving reporting
+              visibility for academic and operations teams.
+            </li>
+          </ul>
         </div>
+
       </div>
-      <div>
-        <h2 style="margin-bottom: 1.5rem;">Certifications & Frameworks</h2>
-        <div class="glass-card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem;">
-          <i data-lucide="award" style="font-size: 2.5rem; color: var(--color-accent); flex-shrink: 0; width: 40px; height: 40px;"></i>
-          <div>
-            <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">Certified Associate in Project Management (CAPM)®</h4>
-            <p style="font-size: 0.85rem;">Project Management Institute (PMI) • Credential Holder</p>
-          </div>
+
+      <!-- Stevens -->
+
+      <div class="experience-item">
+
+        <div class="company-logo">
+          <img src="assets/logos/stevens.png" alt="Stevens Institute of Technology logo">
         </div>
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-          <span class="skill-tag" style="padding: 0.4rem 0.9rem;">Agile & Scrum</span>
-          <span class="skill-tag" style="padding: 0.4rem 0.9rem;">Sprint Planning</span>
-          <span class="skill-tag" style="padding: 0.4rem 0.9rem;">Stakeholder Collaboration</span>
-          <span class="skill-tag" style="padding: 0.4rem 0.9rem;">Trello Kanban</span>
+
+        <div class="experience-card">
+          <span>Sept. 2024 – May 2025</span>
+
+          <h3>Graduate Student Assistant, ELC Lab Monitor</h3>
+
+          <h4>Stevens Institute of Technology, Hoboken, NJ</h4>
+
+          <ul>
+            <li>
+              Improved student engagement by 30% and reduced data tracking errors by 40%
+              by building Excel dashboards and Trello Kanban boards to manage progress
+              for 200+ students.
+            </li>
+
+            <li>
+              Increased workshop participation by 15% and reduced dropout rates by 35%
+              by launching structured English proficiency sessions supported by performance tracking.
+            </li>
+          </ul>
         </div>
+
+      </div>
+
+      <!-- Colliers -->
+
+      <div class="experience-item">
+
+        <div class="company-logo">
+          <img src="assets/logos/colliers.png" alt="Colliers India logo">
+        </div>
+
+        <div class="experience-card">
+          <span>Jan. 2023 – Jul. 2023</span>
+
+          <h3>Graduate Trainee Engineer, Operations and Process Optimization</h3>
+
+          <h4>Colliers India, Karnataka, India</h4>
+
+          <ul>
+            <li>
+              Reduced project delays by 20% by leading the development of CoGence,
+              an AI-powered project management platform with anomaly-detection dashboards
+              that improved decision visibility by 35%.
+            </li>
+
+            <li>
+              Accelerated defect approvals and reduced rework by integrating thermal imaging
+              and point-cloud analytics into inspection workflows, enabling real-time quality
+              validation and faster issue resolution.
+            </li>
+
+            <li>
+              Improved stakeholder coordination and reduced approval cycles by 25%
+              through remote 3D walkthroughs and digital sign-off workflows across design,
+              QA, and operations teams.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="projects-scroll-section">
+
+  <div class="projects-sticky">
+
+    <div class="projects-heading">
+      <p class="small-title">Selected Work</p>
+      <h2>Projects</h2>
+      <div class="underline center-line"></div>
+      <p class="projects-intro">
+        A collection of analytics, business intelligence, AI, and decision-support projects
+        built to solve real business and operations problems.
+      </p>
+    </div>
+
+    <div class="project-display">
+
+      <div class="project-count">
+        <span id="currentProject">01</span>
+        <span>/</span>
+        <span>05</span>
+      </div>
+
+      <div class="project-card sticky-project-card active">
+
+        <div class="project-category">
+          AI Business Intelligence
+        </div>
+
+        <h3>AI Business Intelligence Copilot</h3>
+
+        <p>
+          Built a business intelligence copilot that combines KPI analytics,
+          category analysis, time trend insights, and conversational Q&A over retail data.
+        </p>
+
+        <p>
+          Designed the project to move beyond static reporting by allowing users
+          to ask business questions and receive AI-generated insights from structured data.
+        </p>
+
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Streamlit</span>
+          <span>OpenAI API</span>
+          <span>RAG Q&A</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Mohitrk67/AI-Business-Intelligence-Copilot" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="project-scroll-track">
+
+    <div
+      class="project-trigger"
+      data-number="01"
+      data-category="AI Business Intelligence"
+      data-title="AI Business Intelligence Copilot"
+      data-description-one="Built a business intelligence copilot that combines KPI analytics, category analysis, time trend insights, and conversational Q&A over retail data."
+      data-description-two="Designed the project to move beyond static reporting by allowing users to ask business questions and receive AI-generated insights from structured data."
+      data-tech="Python, Streamlit, OpenAI API, RAG Q&A"
+      data-link="https://github.com/Mohitrk67/AI-Business-Intelligence-Copilot">
+    </div>
+
+    <div
+      class="project-trigger"
+      data-number="02"
+      data-category="Supply Chain Analytics"
+      data-title="Reverse Logistics & Return Analytics"
+      data-description-one="Analyzed reverse logistics data for a retail business to understand return patterns, cost impact, operational risks, and sustainability metrics."
+      data-description-two="Used analytics to identify return trends and translate logistics data into decision-ready insights for process improvement."
+      data-tech="Python, SQL, Power BI, Supply Chain Analytics"
+      data-link="https://github.com/Mohitrk67/Reverese-Logistics-and-Return-Analysis">
+    </div>
+
+    <div
+      class="project-trigger"
+      data-number="03"
+      data-category="Market & Sentiment Analytics"
+      data-title="Electric Vehicle Market and Sentiment Analytics"
+      data-description-one="Analyzed EV adoption data and text-based sentiment using Python, NLTK, and WordCloud to understand market behavior and consumer perception."
+      data-description-two="Focused on extracting insights from EV-related datasets to support market trend analysis and decision-making."
+      data-tech="Python, Pandas, NLTK, TextBlob"
+      data-link="https://github.com/Mohitrk67/ev-sentiment-analysis">
+    </div>
+
+    <div
+      class="project-trigger"
+      data-number="04"
+      data-category="Customer Analytics"
+      data-title="Customer Shopping Behavior Analysis"
+      data-description-one="Analyzed consumer shopping behavior to identify purchasing trends, customer preferences, and drivers of repeat purchases."
+      data-description-two="Used structured analysis to convert customer behavior data into business insights for decision-making."
+      data-tech="Python, SQL, Analytics, Business Insights"
+      data-link="https://github.com/Mohitrk67/Customer-Shopping-Behavior-Analysis">
+    </div>
+
+    <div
+      class="project-trigger"
+      data-number="05"
+      data-category="Decision Support System"
+      data-title="Decision Support System for University Selection"
+      data-description-one="Developed a decision support system to score and rank universities using academic preferences, cost factors, and placement-related inputs."
+      data-description-two="Built the project around structured decision-making, weighted scoring, and comparison-based analysis for university selection."
+      data-tech="Python, Power BI, DSS, Ranking Model"
+      data-link="https://github.com/Mohitrk67/Decision-Support-System-for-University-Selection">
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="section skills-section">
+  <div class="container center">
+
+    <h2>Tools & Technology</h2>
+    <div class="underline center-line"></div>
+
+    <!-- Programming & Data -->
+
+    <div class="skill-category">
+      <h3>Programming & Data</h3>
+
+      <div class="skills-row">
+
+        <div class="skill">
+          <img src="https://api.iconify.design/logos:python.svg" alt="Python logo" />
+          <span>Python</span>
+        </div>
+
+        <div class="skill">
+          <img src="https://api.iconify.design/logos:pandas-icon.svg" alt="Pandas logo" />
+          <span>Pandas</span>
+        </div>
+
+        <div class="skill">
+          <img src="https://api.iconify.design/logos:postgresql.svg" alt="PostgreSQL logo" />
+          <span>PostgreSQL</span>
+        </div>
+
+        <div class="skill">
+          <img src="https://api.iconify.design/logos:streamlit.svg" alt="Streamlit logo" />
+          <span>Streamlit</span>
+        </div>
+
       </div>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container contact-wrapper">
-      <div class="contact-info">
-        <div>
-          <h2>Let's Connect</h2>
-          <p>
-            Interested in discussing data modeling roles, operations dashboards, or collaboration on supply chain analytics projects? Feel free to reach out. I am currently based in Bangalore, India, and open to regional or remote opportunities.
-          </p>
-          
-          <div class="contact-cards">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i data-lucide="mail"></i>
-              </div>
-              <div class="contact-details">
-                <h4>Email</h4>
-                <p>mrkalicha@outlook.com</p>
-              </div>
-            </div>
+    <!-- Analytics & BI -->
 
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i data-lucide="phone"></i>
-              </div>
-              <div class="contact-details">
-                <h4>Phone</h4>
-                <p>+91 9108782929</p>
-              </div>
-            </div>
+    <div class="skill-category">
+      <h3>Analytics & BI</h3>
 
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i data-lucide="map-pin"></i>
-              </div>
-              <div class="contact-details">
-                <h4>Location</h4>
-                <p>Bangalore, Karnataka, India</p>
-              </div>
-            </div>
-          </div>
+      <div class="skills-row">
+
+        <div class="skill">
+          <img src="https://api.iconify.design/logos:microsoft-power-bi.svg" alt="Power BI logo" />
+          <span>Power BI</span>
         </div>
 
-        <div class="contact-socials">
-          <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-          <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <div class="skill">
+          <img src="https://api.iconify.design/logos:looker-icon.svg" alt="Looker logo" />
+          <span>Looker</span>
         </div>
-      </div>
 
-      <div class="glass-card contact-form-card">
-        <form id="contactForm">
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="form-name">Full Name</label>
-              <input type="text" id="form-name" placeholder="John Doe" required>
-            </div>
-            <div class="form-group">
-              <label for="form-email">Email Address</label>
-              <input type="email" id="form-email" placeholder="john@company.com" required>
-            </div>
-            <div class="form-group full-width">
-              <label for="form-subject">Subject</label>
-              <input type="text" id="form-subject" placeholder="Inquiry about Analytics Roles" required>
-            </div>
-            <div class="form-group full-width">
-              <label for="form-message">Message</label>
-              <textarea id="form-message" placeholder="Hi Mohit, I came across your portfolio and wanted to discuss..." required></textarea>
-            </div>
-          </div>
-          
-          <button type="submit" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%;">
-            <i data-lucide="send"></i> Send Message
-          </button>
-          
-          <div class="form-status" id="formStatus"></div>
-        </form>
+        <div class="skill">
+          <img src="https://api.iconify.design/vscode-icons:file-type-excel.svg" alt="Excel logo" />
+          <span>Excel</span>
+        </div>
+
+        <div class="skill">
+          <img src="https://api.iconify.design/vscode-icons:file-type-sql.svg" alt="SQL logo" />
+          <span>SQL</span>
+        </div>
+
       </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-wrapper">
-        <a href="#hero" class="logo">
-          <i data-lucide="line-chart"></i>
-          <span>MOHIT RANGANATH</span>
+    <!-- Cloud & AI -->
+
+    <div class="skill-category">
+      <h3>Cloud & AI</h3>
+    
+      <div class="skills-row">
+    
+        <div class="skill">
+          <img src="https://api.iconify.design/logos:microsoft-azure.svg" alt="Azure logo" />
+          <span>Azure</span>
+        </div>
+    
+        <div class="skill">
+          <img src="https://api.iconify.design/simple-icons:openai.svg?color=%23000000" alt="OpenAI logo" />
+          <span>OpenAI</span>
+        </div>
+    
+      </div>
+    </div>
+
+    <!-- Operations & Collaboration -->
+
+    <div class="skill-category">
+      <h3>Operations & Collaboration</h3>
+
+      <div class="skills-row">
+
+        <div class="skill">
+          <img src="https://api.iconify.design/logos:jira.svg" alt="Jira logo" />
+          <span>Jira</span>
+        </div>
+
+        <div class="skill">
+          <img src="https://api.iconify.design/simple-icons:github.svg?color=%23181717" alt="GitHub logo" />
+          <span>GitHub</span>
+        </div>
+
+        <div class="skill">
+          <img src="https://api.iconify.design/logos:sap.svg" alt="SAP logo" />
+          <span>SAP</span>
+        </div>
+
+        <div class="skill">
+          <img src="https://api.iconify.design/fluent:people-team-24-filled.svg?color=%23c9933e" alt="Agile logo" />
+          <span>Agile</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="section contact">
+    <div class="container center">
+
+      <h2>Let’s Connect</h2>
+      <div class="underline center-line"></div>
+
+      <p>Bangalore, Karnataka</p>
+
+      <p>
+        <a href="mailto:mrkalicha@outlook.com">mrkalicha@outlook.com</a>
+      </p>
+
+      <p>
+        <a href="tel:+919108782929">+91 9108782929</a>
+      </p>
+
+      <div class="contact-icons">
+
+        <a href=https://www.linkedin.com/in/mohit-kalicharan-ranganath/" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
         </a>
-        <p>Operations & Data Analyst specializing in BI and Supply Chain.</p>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Mohit Ranganath. All rights reserved.</p>
-        <ul class="footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#expertise">Expertise</a></li>
-          <li><a href="#dashboard">KPI Simulator</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="script.js"></script>
+        <a href=" https://github.com/Mohitrk67" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="mailto:mrkalicha@outlook.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+<script src="script.js"></script>
 </body>
 </html>
