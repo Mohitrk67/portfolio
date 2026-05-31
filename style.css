@@ -200,6 +200,11 @@ h2 {
   display: block;
 }
 
+.company-logo i {
+  color: #c9933e;
+  font-size: 23px;
+}
+
 .experience-card {
   width: 100%;
   background: #ffffff;

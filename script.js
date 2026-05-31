@@ -32,7 +32,7 @@ function updateProject(trigger) {
       </div>
 
       <div class="project-links">
-        <a href="${link}" target="_blank">
+        <a href="${link}" target="_blank" rel="noopener noreferrer" aria-label="View ${title} on GitHub">
           <i class="fa-brands fa-github"></i> GitHub
         </a>
       </div>
