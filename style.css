@@ -535,6 +535,7 @@ h2 {
 .projects-sticky {
   position: sticky;
   top: 0;
+  z-index: 2;
   height: 100vh;
   padding: 120px 8% 80px;
   display: grid;
@@ -665,6 +666,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
+  pointer-events: none;
 }
 
 .project-trigger {
