@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 200" role="img" aria-labelledby="title">
+  <title id="title">Deloitte logo</title>
+  <rect width="620" height="200" fill="#ffffff"/>
+  <text x="36" y="132" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="800" fill="#000000">Deloitte</text>
+  <circle cx="548" cy="126" r="15" fill="#86BC25"/>
+</svg>

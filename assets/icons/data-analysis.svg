@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Analytics chart icon</title>
+  <rect x="9" y="9" width="46" height="46" rx="10" fill="#fff7eb" stroke="#d7a44f" stroke-width="3"/>
+  <path d="M18 44V30" stroke="#c9933e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M30 44V22" stroke="#c9933e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M42 44V34" stroke="#c9933e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M17 25l10-7 10 8 9-13" stroke="#5d5a55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Agile collaboration icon</title>
+  <circle cx="21" cy="22" r="7" fill="#fff7eb" stroke="#c9933e" stroke-width="3"/>
+  <circle cx="43" cy="22" r="7" fill="#fff7eb" stroke="#c9933e" stroke-width="3"/>
+  <circle cx="32" cy="44" r="7" fill="#fff7eb" stroke="#c9933e" stroke-width="3"/>
+  <path d="M27 24h10M39 29l-4 8M25 29l4 8" stroke="#5d5a55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M13 36c-4-8 0-19 9-23M51 36c4-8 0-19-9-23" stroke="#d7a44f" stroke-width="3" stroke-linecap="round"/>
+</svg>

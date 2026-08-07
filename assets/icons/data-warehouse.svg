@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Data warehouse icon</title>
+  <path d="M10 25l22-12 22 12v26H10V25z" fill="#fff7eb" stroke="#c9933e" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M20 31h24M20 39h24M20 47h24" stroke="#5d5a55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 31v20M40 31v20" stroke="#d7a44f" stroke-width="3"/>
+</svg>
